@@ -1,0 +1,479 @@
+id __cdecl +[BVzkSxABclxJxx xxPxxwQyxrnKex:](id a1, SEL a2, id a3)
+{
+  int v3; // w9
+  unsigned int v4; // w9
+  __int64 v5; // x8
+  __int64 v6; // x13
+  id v7; // x0
+  id v8; // x0
+  __int64 v9; // x8
+  __int64 v10; // x13
+  void *v11; // x0
+  id v12; // x0
+  size_t v13; // x7
+  CCCryptorStatus v14; // w0
+  __int64 v15; // x8
+  int v16; // w9
+  int v17; // w11
+  int v18; // w9
+  unsigned int v19; // w9
+  bool v20; // cf
+  int v21; // w9
+  int v22; // w10
+  __int64 v23; // x2
+  size_t v24; // x3
+  NSString *v25; // x0
+  NSString *v26; // x0
+  int v27; // w10
+  unsigned int v28; // w9
+  void *v29; // x0
+  int v30; // w10
+  unsigned int v31; // w9
+  int v32; // w9
+  int v33; // w10
+  int v34; // w10
+  __int64 v36; // x9
+  __int64 v37; // x10
+  const void *v38; // x11
+  void *v39; // x0
+  id v40; // x0
+  __int64 v41; // x8
+  __int64 v42; // x10
+  void *v43; // x0
+  id v44; // x0
+  size_t v45; // x7
+  CCCryptorStatus v46; // w0
+  NSString *v47; // x0
+  NSString *v48; // x0
+  void *dataOut; // [xsp+0h] [xbp-350h]
+  void *dataOuta; // [xsp+0h] [xbp-350h]
+  size_t dataOutAvailable; // [xsp+8h] [xbp-348h]
+  size_t dataOutAvailablea; // [xsp+8h] [xbp-348h]
+  __int64 v53; // [xsp+20h] [xbp-330h] BYREF
+  __int64 v54; // [xsp+30h] [xbp-320h] BYREF
+  __int64 v55; // [xsp+40h] [xbp-310h] BYREF
+  _BYTE v56[16]; // [xsp+60h] [xbp-2F0h] BYREF
+  _BYTE v57[16]; // [xsp+70h] [xbp-2E0h] BYREF
+  __int64 v58; // [xsp+80h] [xbp-2D0h] BYREF
+  _BYTE v59[16]; // [xsp+90h] [xbp-2C0h] BYREF
+  _BYTE v60[48]; // [xsp+A0h] [xbp-2B0h] BYREF
+  _BYTE v61[16]; // [xsp+D0h] [xbp-280h] BYREF
+  id v62[2]; // [xsp+E0h] [xbp-270h] BYREF
+  SEL v63; // [xsp+F0h] [xbp-260h] BYREF
+  id v64; // [xsp+100h] [xbp-250h]
+  __int64 v65; // [xsp+110h] [xbp-240h] BYREF
+  id v66; // [xsp+128h] [xbp-228h]
+  id v67; // [xsp+130h] [xbp-220h]
+  id v68; // [xsp+138h] [xbp-218h]
+  NSData *v69; // [xsp+140h] [xbp-210h]
+  id v70; // [xsp+148h] [xbp-208h]
+  id v71; // [xsp+150h] [xbp-200h]
+  CCAlgorithm v72; // [xsp+15Ch] [xbp-1F4h]
+  id v73; // [xsp+160h] [xbp-1F0h]
+  _BYTE *v74; // [xsp+168h] [xbp-1E8h]
+  __int64 *v75; // [xsp+170h] [xbp-1E0h]
+  _BYTE *v76; // [xsp+178h] [xbp-1D8h]
+  _BYTE *v77; // [xsp+180h] [xbp-1D0h]
+  _BYTE *v78; // [xsp+188h] [xbp-1C8h]
+  _BYTE *v79; // [xsp+190h] [xbp-1C0h]
+  id *v80; // [xsp+198h] [xbp-1B8h]
+  const void *v81; // [xsp+1A0h] [xbp-1B0h]
+  SEL *v82; // [xsp+1A8h] [xbp-1A8h]
+  size_t *v83; // [xsp+1B0h] [xbp-1A0h]
+  _BYTE *v84; // [xsp+1B8h] [xbp-198h]
+  unsigned int v85; // [xsp+1CCh] [xbp-184h]
+  id v86; // [xsp+1D0h] [xbp-180h]
+  id v87; // [xsp+1D8h] [xbp-178h]
+  unsigned int v88; // [xsp+1E0h] [xbp-170h]
+  int v89; // [xsp+1E4h] [xbp-16Ch]
+  unsigned int v90; // [xsp+1E8h] [xbp-168h]
+  unsigned int v91; // [xsp+1ECh] [xbp-164h]
+  int v92; // [xsp+1F0h] [xbp-160h]
+  unsigned int v93; // [xsp+1F4h] [xbp-15Ch]
+  id v94; // [xsp+1F8h] [xbp-158h]
+  id v95; // [xsp+200h] [xbp-150h]
+  NSData *v96; // [xsp+208h] [xbp-148h]
+  unsigned int v97; // [xsp+214h] [xbp-13Ch]
+  int v98; // [xsp+218h] [xbp-138h]
+  _BOOL4 v99; // [xsp+21Ch] [xbp-134h]
+  int v100; // [xsp+220h] [xbp-130h]
+  int v101; // [xsp+224h] [xbp-12Ch]
+  id v102; // [xsp+228h] [xbp-128h]
+  id v103; // [xsp+230h] [xbp-120h]
+  CCAlgorithm v104; // [xsp+23Ch] [xbp-114h]
+  id v105; // [xsp+240h] [xbp-110h]
+  _BYTE *v106; // [xsp+248h] [xbp-108h]
+  _BYTE *v107; // [xsp+250h] [xbp-100h]
+  _BYTE *v108; // [xsp+258h] [xbp-F8h]
+  _BYTE *v109; // [xsp+260h] [xbp-F0h]
+  _BYTE *v110; // [xsp+268h] [xbp-E8h]
+  char v111[12]; // [xsp+274h] [xbp-DCh]
+  unsigned int v112; // [xsp+280h] [xbp-D0h]
+  int v113; // [xsp+284h] [xbp-CCh]
+  int v114; // [xsp+288h] [xbp-C8h]
+  int v115; // [xsp+28Ch] [xbp-C4h]
+  int v116; // [xsp+290h] [xbp-C0h]
+  int v117; // [xsp+294h] [xbp-BCh]
+  int v118; // [xsp+298h] [xbp-B8h]
+  int v119; // [xsp+29Ch] [xbp-B4h]
+  int v120; // [xsp+2A0h] [xbp-B0h]
+  int v121; // [xsp+2A4h] [xbp-ACh]
+  int v122; // [xsp+2A8h] [xbp-A8h]
+  int v123; // [xsp+2ACh] [xbp-A4h]
+  int v124; // [xsp+2B0h] [xbp-A0h]
+  int v125; // [xsp+2B4h] [xbp-9Ch]
+  int v126; // [xsp+2B8h] [xbp-98h]
+  int v127; // [xsp+2BCh] [xbp-94h]
+  int v128; // [xsp+2C0h] [xbp-90h]
+  int v129; // [xsp+2C4h] [xbp-8Ch]
+  id v130; // [xsp+2C8h] [xbp-88h]
+  SEL v131; // [xsp+2D0h] [xbp-80h]
+  id v132; // [xsp+2D8h] [xbp-78h]
+  int v133; // [xsp+2E0h] [xbp-70h]
+  unsigned int v134; // [xsp+2E4h] [xbp-6Ch]
+  id *v135; // [xsp+2E8h] [xbp-68h]
+  id *v136; // [xsp+2F0h] [xbp-60h]
+  id *v137; // [xsp+2F8h] [xbp-58h]
+  __int64 *v138; // [xsp+300h] [xbp-50h]
+  size_t *dataOutMoved; // [xsp+308h] [xbp-48h]
+  id *v140; // [xsp+310h] [xbp-40h]
+  id *v141; // [xsp+318h] [xbp-38h]
+  __int64 *v142; // [xsp+320h] [xbp-30h]
+  bool v143; // [xsp+32Fh] [xbp-21h]
+  id v144; // [xsp+330h] [xbp-20h]
+
+  v134 = ((dword_114370 + dword_114374) ^ 0xFB6F0AA1) - 1123677416;
+  v133 = -538189646;
+  v132 = a3;
+  v131 = a2;
+  v130 = a1;
+  while ( 1 )
+  {
+    while ( 1 )
+    {
+      while ( 1 )
+      {
+        while ( 1 )
+        {
+          while ( 1 )
+          {
+            while ( 1 )
+            {
+              while ( 1 )
+              {
+                while ( 1 )
+                {
+                  while ( 1 )
+                  {
+                    while ( 1 )
+                    {
+                      while ( 1 )
+                      {
+                        while ( 1 )
+                        {
+                          while ( 1 )
+                          {
+                            while ( 1 )
+                            {
+                              v129 = v133;
+                              v128 = v133 + 2039997125;
+                              v127 = v133 + 1659373835;
+                              if ( v133 != -1659373835 )
+                                break;
+                              if ( v143 )
+                                v18 = 1380800154;
+                              else
+                                v18 = 1345722844;
+                              v133 = v18;
+                              v99 = v143;
+                            }
+                            v126 = v129 + 663165199;
+                            if ( v129 != -663165199 )
+                              break;
+                            v66 = 0LL;
+                            objc_storeStrong(v137, 0LL);
+                            objc_storeStrong(v136, v66);
+                            objc_autoreleaseReturnValue(*v135);
+                            v133 = 602872713;
+                          }
+                          v125 = v129 + 538189646;
+                          if ( v129 != -538189646 )
+                            break;
+                          if ( v134 >= 0x90762DAE )
+                            v3 = 391092842;
+                          else
+                            v3 = 400801210;
+                          v133 = v3;
+                          v112 = v134 + 1871303250;
+                        }
+                        v124 = v129 - 263870976;
+                        if ( v129 != 263870976 )
+                          break;
+                        v69 = objc_msgSend(&OBJC_CLASS___NSData, "dataWithBytesNoCopy:length:", *v138, *dataOutMoved);
+                        objc_retainAutoreleasedReturnValue(v69);
+                        *v140 = v69;
+                        v47 = objc_msgSend(&OBJC_CLASS___NSString, "alloc");
+                        v48 = objc_msgSend(v47, "initWithData:encoding:", *v140, 4LL);
+                        *v141 = v48;
+                        v68 = *v141;
+                        objc_retain(v68);
+                        *v135 = v68;
+                        *(_DWORD *)v142 = 1;
+                        v67 = 0LL;
+                        objc_storeStrong(v141, 0LL);
+                        objc_storeStrong(v140, v67);
+                        v133 = 1304420200;
+                      }
+                      v123 = v129 - 391092842;
+                      if ( v129 != 391092842 )
+                        break;
+                      v64 = v130;
+                      v63 = v131;
+                      v62[0] = 0LL;
+                      v84 = v57;
+                      v83 = (size_t *)v56;
+                      v82 = &v63;
+                      v81 = 0LL;
+                      v80 = v62;
+                      v79 = v61;
+                      v78 = v60;
+                      v77 = v60;
+                      v76 = v59;
+                      v75 = &v58;
+                      v74 = v56;
+                      objc_storeStrong(v62, v132);
+                      v73 = +[DUSecretCollector getMasterDeviceId:](
+                              &OBJC_CLASS___DUSecretCollector,
+                              "getMasterDeviceId:",
+                              *(v82 - 2));
+                      objc_retainAutoreleasedReturnValue(v73);
+                      v36 = (__int64)v80;
+                      *(v80 - 2) = v73;
+                      v37 = (__int64)v79;
+                      *(v79 - 16) = 0;
+                      v38 = v81;
+                      *(_QWORD *)(v37 - 24) = v81;
+                      *(_QWORD *)(v37 - 32) = v38;
+                      *(_QWORD *)(v37 - 40) = v38;
+                      *(_QWORD *)(v37 - 48) = v38;
+                      *(_BYTE *)(v37 - 48) = 107;
+                      *(_BYTE *)(v37 - 47) = 101;
+                      *(_BYTE *)(v37 - 46) = 121;
+                      *(_BYTE *)(v37 - 45) = 120;
+                      *(_BYTE *)(v37 - 44) = 120;
+                      v39 = *(void **)(v36 - 16);
+                      v72 = 0;
+                      v40 = objc_msgSend(v39, "length");
+                      v41 = (__int64)v77;
+                      *((_QWORD *)v77 - 2) = v40;
+                      v42 = (__int64)v76;
+                      *((_QWORD *)v76 - 2) = *(_QWORD *)(v41 - 16) + 16LL;
+                      v43 = malloc(*(_QWORD *)(v42 - 16));
+                      *(v75 - 2) = (__int64)v43;
+                      *((_QWORD *)v84 - 2) = v81;
+                      v71 = *(v80 - 2);
+                      objc_retainAutorelease(v71);
+                      v44 = objc_msgSend(v71, "bytes");
+                      v45 = *((_QWORD *)v77 - 2);
+                      dataOutAvailablea = *((_QWORD *)v76 - 2);
+                      dataOuta = (void *)*(v75 - 2);
+                      v70 = v44;
+                      v46 = CCCrypt(1u, v72, 3u, v78, 0x10uLL, v81, v44, v45, dataOuta, dataOutAvailablea, v83);
+                      *((_DWORD *)v74 - 4) = v46;
+                      v133 = 400801210;
+                    }
+                    v122 = v129 - 400801210;
+                    if ( v129 != 400801210 )
+                      break;
+                    v4 = (~(dword_114378 | dword_11437C) & 0x9911846 | (dword_114378 | dword_11437C) & 0x82664220) ^ 0x89F21A42 | (dword_114378 | dword_11437C) & 0x80630204 | 0x7408A599;
+                    v135 = (id *)&v65;
+                    v136 = v62;
+                    v137 = (id *)v61;
+                    v138 = (__int64 *)v57;
+                    dataOutMoved = (size_t *)v56;
+                    v140 = (id *)&v55;
+                    v141 = (id *)&v54;
+                    v142 = &v53;
+                    v64 = v130;
+                    v63 = v131;
+                    v62[0] = 0LL;
+                    *(_DWORD *)&v111[8] = 0;
+                    *(_QWORD *)v111 = (v4 ^ 0xE9A38451) & v4;
+                    v110 = v61;
+                    v109 = v60;
+                    v108 = v60;
+                    v107 = v59;
+                    v106 = v56;
+                    objc_storeStrong(v62, v132);
+                    v105 = +[DUSecretCollector getMasterDeviceId:](
+                             &OBJC_CLASS___DUSecretCollector,
+                             "getMasterDeviceId:",
+                             *v136);
+                    objc_retainAutoreleasedReturnValue(v105);
+                    *v137 = v105;
+                    v5 = (__int64)v110;
+                    *(v110 - 16) = 0;
+                    v6 = *(_QWORD *)&v111[4];
+                    *(_QWORD *)(v5 - 24) = *(_QWORD *)&v111[4];
+                    *(_QWORD *)(v5 - 32) = v6;
+                    *(_QWORD *)(v5 - 40) = v6;
+                    *(_QWORD *)(v5 - 48) = v6;
+                    *(_BYTE *)(v5 - 48) = 107;
+                    *(_BYTE *)(v5 - 47) = 101;
+                    *(_BYTE *)(v5 - 46) = 121;
+                    *(_BYTE *)(v5 - 45) = 120;
+                    *(_BYTE *)(v5 - 44) = 120;
+                    v7 = *v137;
+                    v104 = 0;
+                    v8 = objc_msgSend(v7, "length");
+                    v9 = (__int64)v108;
+                    *((_QWORD *)v108 - 2) = v8;
+                    v10 = (__int64)v107;
+                    *((_QWORD *)v107 - 2) = *(_QWORD *)(v9 - 16) + 16LL;
+                    v11 = malloc(*(_QWORD *)(v10 - 16));
+                    *v138 = (__int64)v11;
+                    *dataOutMoved = *(_QWORD *)&v111[4];
+                    v103 = *v137;
+                    objc_retainAutorelease(v103);
+                    v12 = objc_msgSend(v103, "bytes");
+                    v13 = *((_QWORD *)v108 - 2);
+                    dataOutAvailable = *((_QWORD *)v107 - 2);
+                    dataOut = (void *)*v138;
+                    v102 = v12;
+                    v14 = CCCrypt(
+                            1u,
+                            v104,
+                            3u,
+                            v109,
+                            0x10uLL,
+                            *(const void **)&v111[4],
+                            v12,
+                            v13,
+                            dataOut,
+                            dataOutAvailable,
+                            dataOutMoved);
+                    v15 = (__int64)v106;
+                    *((_DWORD *)v106 - 4) = v14;
+                    v16 = *(_DWORD *)(v15 - 16);
+                    v143 = v16 == 0;
+                    if ( *(_DWORD *)v111 <= 0xFEAB8DCu )
+                      v17 = 391092842;
+                    else
+                      v17 = -1659373835;
+                    v133 = v17;
+                    v101 = v16;
+                    v100 = *(_DWORD *)v111 - 267040988;
+                  }
+                  v121 = v129 - 602872713;
+                  if ( v129 != 602872713 )
+                    break;
+                  v88 = ((dword_1143A8 & dword_1143AC ^ 0x62F12946) & (dword_1143A8 & dword_1143AC ^ 0x39C3ACC9))
+                      - 1387536319;
+                  v87 = 0LL;
+                  objc_storeStrong(v137, 0LL);
+                  objc_storeStrong(v136, v87);
+                  v86 = *v135;
+                  objc_autoreleaseReturnValue(v86);
+                  v144 = v86;
+                  if ( v88 <= 0x6F20D70A )
+                    v34 = 602872713;
+                  else
+                    v34 = 2011280488;
+                  v133 = v34;
+                  v85 = v88 - 1864423178;
+                }
+                v120 = v129 - 613348845;
+                if ( v129 != 613348845 )
+                  break;
+                v28 = (~dword_114398 & 0x7B64A3CB | dword_114398 & 0x849B5C34) ^ (~dword_11439C & 0x7B64A3CB | dword_11439C & 0x849B5C34);
+                v29 = (void *)*v138;
+                v91 = ((v28 ^ 0x901B7119) & (v28 ^ 0x5D448595)) - 1107521301;
+                free(v29);
+                *v135 = 0LL;
+                *(_DWORD *)v142 = 1;
+                if ( v91 <= 0xC7A3D1C0 )
+                  v30 = 1742520137;
+                else
+                  v30 = 613348845;
+                v133 = v30;
+                v90 = v91 + 945565248;
+              }
+              v119 = v129 - 855053454;
+              if ( v129 != 855053454 )
+                break;
+              v133 = 1124094236;
+            }
+            v118 = v129 - 1124094236;
+            if ( v129 != 1124094236 )
+              break;
+            v31 = (((dword_1143A0 + dword_1143A4) ^ 0x54F10CE4) + 1620641851) & 0x3C3E57DF | (((dword_1143A0
+                                                                                              + dword_1143A4) ^ 0x54F10CE4)
+                                                                                            + 1620641851) ^ 0x3C3E57DF;
+            v20 = v31 >= 0xB30A8B1C;
+            v32 = v31 + 1291154660;
+            if ( v32 != 0 && v20 )
+              v33 = -663165199;
+            else
+              v33 = 602872713;
+            v133 = v33;
+            v89 = v32;
+          }
+          v117 = v129 - 1304420200;
+          if ( v129 != 1304420200 )
+            break;
+          v23 = *v138;
+          v24 = *dataOutMoved;
+          v97 = (~((dword_114388 & ~(dword_114388 ^ dword_11438C)) + 775111552) & 0xFE734FCD | ((dword_114388 & ~(dword_114388 ^ dword_11438C))
+                                                                                              + 775111552) & 0x18CB032)
+              + 306755055;
+          v96 = objc_msgSend(&OBJC_CLASS___NSData, "dataWithBytesNoCopy:length:", v23, v24);
+          objc_retainAutoreleasedReturnValue(v96);
+          *v140 = v96;
+          v25 = objc_msgSend(&OBJC_CLASS___NSString, "alloc");
+          v26 = objc_msgSend(v25, "initWithData:encoding:", *v140, 4LL);
+          *v141 = v26;
+          v95 = *v141;
+          objc_retain(v95);
+          *v135 = v95;
+          *(_DWORD *)v142 = 1;
+          v94 = 0LL;
+          objc_storeStrong(v141, 0LL);
+          objc_storeStrong(v140, v94);
+          if ( v97 >= 0x20B01614 )
+            v27 = 855053454;
+          else
+            v27 = 1304420200;
+          v133 = v27;
+          v93 = v97 - 548410900;
+        }
+        v116 = v129 - 1345722844;
+        if ( v129 != 1345722844 )
+          break;
+        v133 = 613348845;
+        v92 = ((((~dword_114390 & 0x2E0F9A56 | dword_114390 & 0x11F065A9) ^ (~dword_114394 & 0x2E0F9A56 | dword_114394 & 0x11F065A9))
+              + 786381592) & 0x22421816)
+            - 1682480486;
+      }
+      v115 = v129 - 1380800154;
+      if ( v129 != 1380800154 )
+        break;
+      v19 = (~(dword_114380 - dword_114384 + 936055437) & 0x80074800 | 0x42C0116C | (dword_114380
+                                                                                   - dword_114384
+                                                                                   + 936055437) & 0x1282491) ^ 0x22EC2218 | (dword_114380 - dword_114384 + 936055437) & 0x802B6810;
+      v20 = v19 >= 0x2B5B7A05;
+      v21 = v19 - 727415301;
+      if ( v21 != 0 && v20 )
+        v22 = 1304420200;
+      else
+        v22 = 263870976;
+      v133 = v22;
+      v98 = v21;
+    }
+    v114 = v129 - 1742520137;
+    if ( v129 != 1742520137 )
+      break;
+    v133 = 1124094236;
+  }
+  v113 = v129 - 2011280488;
+  return v144;
+}
